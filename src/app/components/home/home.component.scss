@@ -4,66 +4,72 @@ main {
     display: flex;
     flex-direction: column;
     gap: 85px;
-}
 
-.main-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Roboto", sans-serif;
-
-    @media (min-width: 1080px) {
-        flex-direction: row;
-    }
-
-    span {
-        font-size: 20px;
-        font-weight: 700;
-        color: $secondary-text;
-    }
-
-    h1 {
-        font-size: 72px;
-        font-weight: 900;
-        color: $primary-text;
-    }
-}
-
-.benefit-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 70px;
-
-    @media (min-width: 1080px) {
-        flex-direction: row;
-    }
-
-    .benefit-data {
-        border-bottom: 10px solid $secondary-color;
-        padding-bottom: 40px;
-
-        h2 {
-            font-size: 60px;
-            font-weight: 600;
-            font-family: "Roboto", sans-serif;
+    .main-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Roboto", sans-serif;
+    
+        @media (min-width: 1080px) {
+            flex-direction: row;
+        }
+    
+        span {
+            font-size: 20px;
+            font-weight: 700;
+            color: $secondary-text;
+        }
+    
+        h1 {
+            font-size: 72px;
+            font-weight: 900;
             color: $primary-text;
         }
     }
-
-    p {
-        font-size: 40px;
-        font-style: italic;
-        font-weight: 300;
-
-        b {
-            background-image: linear-gradient(270deg, $ligth-primary-color, $secondary-color);
-            -webkit-background-clip: text;
-            /* Alguns navegadores precisam do prefixo */
-            color: transparent;
-            font-style: normal;
+    
+    .benefit-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 70px;
+    
+        @media (min-width: 1080px) {
+            flex-direction: row;
         }
+    
+        .benefit-data {
+            border-bottom: 10px solid $secondary-color;
+            padding-bottom: 40px;
+    
+            h2 {
+                font-size: 60px;
+                font-weight: 600;
+                font-family: "Roboto", sans-serif;
+                color: $primary-text;
+            }
+        }
+    
+        p {
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 300;
+    
+            b {
+                background-image: linear-gradient(270deg, $ligth-primary-color, $secondary-color);
+                -webkit-background-clip: text;
+                /* Alguns navegadores precisam do prefixo */
+                color: transparent;
+                font-style: normal;
+            }
+        }
+    }
+
+    .cta-session {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
